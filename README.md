@@ -26,4 +26,4 @@ When I click on a specific category
 
 Then I can view the photos I saved there.  
 
-![image](https://user-images.githubusercontent.com/103154325/169927271-dace36f1-61a5-46c9-8042-3a06b56ae5cd.png)
+
