@@ -19,8 +19,8 @@ header .title {
     text-align: center;
 }
 
-.section .container2 {
-    padding: 15px 140px;
-    background-color: #F5C6F9;
+.section .box {
+    padding: 15px 60px;
+    background-color: #F4DEF9;
 }
 
