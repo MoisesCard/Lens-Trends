@@ -11,7 +11,13 @@
     font-family: 'Roboto Slab', serif;
     
 }
-
+.modal {
+    position: absolute;
+    left: 50%;
+    top: 50%; 
+    margin-left: -150px;
+    margin-top: -150px;
+ }
 /* button options and input bar */
 .input-bar {
     margin-bottom: 10px;
@@ -42,6 +48,7 @@
     color: #626567;
     border-color: #626567;
     margin-left: 400px;
+    position: relative;
 
 }
 
