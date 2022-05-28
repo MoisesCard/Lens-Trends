@@ -6,8 +6,8 @@
     <title>Lens Trends</title>
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <script src="https://kit.fontawesome.com/c1eee10096.js" crossorigin="anonymous"></script>
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/css/index2.css"/>
 
   </head>
   <body>
@@ -36,7 +36,7 @@
                   
                     
                   <span class="navbar-item">
-                    <a class="button is-info ml-4 is-warning">
+                    <a class="button  ml-4 ">
                       <span class="icon">
                         <i class="fab fa-github"></i>
                       </span>
@@ -51,16 +51,16 @@
       
         <div class="hero-body">
           <div class="container has-text-centered">
-            <p class="title is-size-1">
+            <p class="welcome">
               WELCOME, <!-- user's name -->
             </p>
             <p class="subtitle">
               These are the categories that you have selected: 
             </p>
             <div class="buttons are-medium is-centered">
-                <button class="button is-warning"> Music  </button> 
-                <button class="button is-warning"> Books  </button> 
-                <button class="button is-warning"> Traveling  </button> 
+                <button class="button"> MUSIC  </button> 
+                <button class="button"> BOOKS  </button> 
+                <button class="button"> SPORTS  </button> 
 
             </div>
           </div>
@@ -76,21 +76,33 @@
        <!-- Columns -->
     <div class="columns has-background-dark">
         <!-- Left -->
-        <div class="column is-one-third ml-5">
-            <h2 class="has-text-warning is-size-3 has-text-centered"> CATEGORIES </h2>
+        <div class="column is-one-third ml-7">
+            <h2 class="sub-header"> CATEGORIES </h2>
+            <div class="buttons are-medium is-centered">
+                <button class="button" class="list" data-filter="music"> MUSIC  </button> 
+                <button class="button" class="list" data-filter="books"> BOOKS  </button> 
+                <button class="button" class="list" data-filter="sports"> SPORTS  </button> 
+                <button class="button" class="list" data-filter="art"> ART </button> 
+                <button class="button" class="list" data-filter="travel"> TRAVEL  </button>
+
+            </div>
             
         </div>
         <!-- Right -->
         <div class="column is-four-sixths mr-7">
-            <h2 class="has-text-warning is-size-3 has-text-centered"> IMAGES </h2>
+            <h2 class="sub-header"> IMAGES </h2>
             <div class="container is-fluid ">
                 <div class="notification is-primary has-background-light has-text-grey">
-                IMAGES WILL BE HERE 
-                </div>
+                   <div class="gallery"> 
+                       <!-- JS code for pexels gallery goes here-->
+                   </div>
+                    </div>
               </div>
 
         </div>
     </div>
+
+    <script src="./assets/js/index2.js"></script>
   </body>
 </html>
 
