@@ -1,57 +1,88 @@
-<html lang="en">
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Lens Trends</title>
-        <link rel="stylesheet" href="./assets/css/mstyle.css" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    </head>
-    <body>
-        <header>
-            <h1 class="title is-1">Lens Trends</h1>
-        </header>
+<!DOCTYPE html>
+<html>
 
-        <main class="columns">
-            <div class="section column is-one-quarter">
-                <div class="container">
-                    <h2 class="subtitle is-4">Directories</h2>
-                    <input typ;e="text" class="input is-small is-primary is-hovered is-rounded" placeholder="Folder Name">
-                    <button class="button mt-1 is-primary is-small is-rounded is">Save</button>
-                </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LENStrends</title>
+  <!--FAVICON-->
+  <link rel="shortcut icon" type="camera/png"
+    href="https://cdn1.iconfinder.com/data/icons/social-media-vol-3/24/_camera-256.png" />
 
-                <div class="columns is-mobile mt-6">
-                    <div class="column">
-                        <div class="container">
-                            <h2 class="subtitle is-4">Categories</h2>
-                            <div class="select is-multiple">
-                                <select multiple size="5">
-                                    <option value="sports">Sports</option>
-                                    <option value="food">Food</option>
-                                    <option value="animals">Animals</option>
-                                    <option value="movies">Movies</option>
-                                    <option value="music">Music</option>
-                                </select>
-                                <button class="button mt-1 is-primary is-small is-rounded is">Save</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <section class="hero is-success">
+    <!-- Hero head: will stick at the top -->
+    <div class="hero-head">
+      <header class="navbar">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item">
+              <img src="assets/camera.png" alt="Lens Trends Logo">
+              <h1 class="header-title">LENStrends</h1>
+            </a>
+            <span class="navbar-burger" data-target="navbarMenuHeroC">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <div id="navbarMenuHeroC" class="navbar-menu">
+            <div class="navbar-end">
+              <a class="navbar-item is-active">
+                HOME
+              </a>
+              <a class="navbar-item">
+                MY SAVES
+              </a>
+              </span>
             </div>
+          </div>
+        </div>
+      </header>
+    </div>
 
-            <div class="section column is-full is-flex-direction-column">
-                <div class="box">
-                    <h2 class="title is-3">Your Trends</h2>
-                    <p class="subtitle is-4">
-                        Photos Based on Your Interests
-                    </p>
-                </div>
-            </div>
+    <!-- Hero content: will be in the middle -->
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title">WELCOME TO LENS TRENDS.</h1>
+        <h2 class="subtitle">a photo site where you have the ability to categorize what you like to see behind the lens.
+        </h2>
+      </div>
+    </div>
 
-        </main>
-        
-    </body>
-    </html>
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="subtitle">
+          These are the categories that you have selected:
+        </h1>
+        <div class="buttons are-medium is-centered">
+          <button class="button is-black change-category-btn button is-large" id="music-btn" value="music">
+            MUSIC</button>
+          <button class="button is-black change-category-btn button is-large" id="books-btn" value="books"> BOOKS
+          </button>
+          <button class="button is-black change-category-btn button is-large" id="travel-btn"
+            value="travel">TRAVEL</button>
+          <button class="button is-black change-category-btn button is-large" id="sports-btn"
+            value="sports">SPORTS</button>
+          <button class="button is-black change-category-btn button is-large" id="nature-btn"
+            value="nature">NATURE</button>
+
+
+
+          <!-- Hero footer: will stick at the bottom -->
+          <div class="hero-foot">
+            <nav class="tabs is-boxed is-fullwidth">
+              <div class="container">
+              </div>
+            </nav>
+          </div>
+  </section>
+
+  <script src="assets/js/script.js"></script>
+</body>
+
 </html>

@@ -1,25 +1,11 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  font-family: lobster;
 }
 
-header {
-    padding: 15px 20px;
-    background-color: #AD55B3;
-    display: flex;
-    flex-wrap: wrap;
-    position: sticky;
-}
-
-header .title {
-    margin: 10px 10px;
-    color: #F5C6F9;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    text-align: center;
-}
-
-.section .box {
-    padding: 15px 60px;
-    background-color: #F4DEF9;
+:root {
+  --black: black;
+  --green: #02753c;
+  --purple: #630150;
+  --grey: #242625;
+  --white: --white
 }
