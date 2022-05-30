@@ -1,13 +1,58 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan&family=Roboto+Slab&display=swap');
 
+/* charlotte code */
+@font-face {
+    src: url("./assets/fonts/PJSM.ttf");
+    font-family: PJSM;
+}
+
+.welcome {
+    font-size: 70px;
+    color: rgb(225, 203, 113);
+    font-weight: 700;
+}
+
+.sub-header{
+    font-size: 40px; 
+    font-weight: 600;
+    color: rgb(225, 203, 113);
+    text-align: center;
+    padding-bottom: 10px;
+
+}
+
+.button {
+    background-color: rgb(135, 113, 225) ;
+    border: none;
+    color:rgb(66, 58, 96);
+    font-weight: 600;
+}
+
+.button:hover {
+    background-color: rgb(225, 203, 113) ;
+    border: none;
+    color:rgb(96, 89, 58);
+}
+
+.button:active {
+    background-color: rgb(225, 203, 113) ;
+    border: none;
+    color:rgb(96, 89, 58);
+}
+
+/* charlotte code */
 
 
 .display {
     display: block;
 }
 
-.title {
+.noDisplay {
+    display: none;
+}
+
+.m-title {
     font-family: 'Roboto Slab', serif;
     
 }
@@ -19,27 +64,8 @@
     margin-top: -150px;
  }
 /* button options and input bar */
-.input-bar {
-    margin-bottom: 10px;
-    color: #fdbf02;
-    border-color: #fdbf02;
-}
 
-.button {
-    color: #fdbf02;
-    border-color: #fdbf02;
-}
 
-.button:hover {
-    color: #e0aa03;
-    border-color: #e0aa03;
-}
-
-.button:active {
-    background-color:#fdbf02;
-    color : #626567;
-    box-shadow: #fdbf02;
-}
 
 
 .continue-btn {
@@ -52,15 +78,3 @@
 
 }
 
-.continue-btn:hover {
-    color:#3d3d3d;
-    border-color: #3d3d3d;
-    background-color: #e0aa03;
-    
-}
-
-.continue-btn:active {
-    background-color:#fdbf02;
-    color : #626567;
-    box-shadow: #fdbf02;
-}
