@@ -1,39 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lens Trends</title>
-</head>
-<body>
+<html>
 
-//Intro card : introduces the site and askes for the user's name 
-<h1 class="intro-title"> We're Lens Trends </h1>
-    // goal with p tag 
-    // "what is your name?"
-    // "lets get to know you" button 
-    // hide the page 
-
-// Welcomes the user by the entered name and askes the user for their intrests 
-<div class="intro-card">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <h2 class="intro-question"> What are your intrests? </h2>
+    <title>LENStrends</title>
+    <!--FAVICON-->
+    <link rel="shortcut icon" type="camera/png"
+      href="https://cdn1.iconfinder.com/data/icons/social-media-vol-3/24/_camera-256.png" />
+      <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+      <script src="https://kit.fontawesome.com/c1eee10096.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="assets/css/index.css" />
+  </head>
 
-    //intro question buttons that preset the categories 
-    //Categories made with java are filled with images 
-    //user's answer is saved 
-    <button id="intrest-btn"> cars </button>
-    <button id="intrest-btn"> music </button>
-    <button id="intrest-btn"> movies </button>
-    <button id="intrest-btn"> books </button>
-    <button id="intrest-btn"> cooking </button>
-    <button id="intrest-btn"> art </button>
-    <button id="intrest-btn"> cruises </button>
-    <button id="intrest-btn"> hiking </button>
+  <body>
+    <section class="hero is-info is-medium has-background-dark">
+        <div class="hero-head">
+          <nav class="navbar mt-4">
+            <div class="container">
+              <div class="navbar-brand">
+                  
+                  <h2 class="is-size-2 is-family-primary"> 
+                    <i class="fa-solid fa-camera-retro"></i>
+                    LENS TRENDS</h2>
+                <span class="navbar-burger has" data-target="navbarMenuHeroB">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
+              </div>
+              <div id="navbarMenuHeroB" class="navbar-menu">
+                <div class="navbar-end">
+                
+                  <span class="icon is-large"> 
+                    <a class="button-icon ml-4" href="./">
+                    <i class="fa-solid fa-house mr-4 mt-4"></i>  
 
-</div>
+<!-- profile icon
+    <i class="fa-solid fa-user mr-4 mt-4"></i>
+-->
+                </a>
+                </span>
+                  
+                
 
+                  <span class="navbar-item">
+                    <a class="button  ml-4" href="https://github.com/MoisesCard/group1-project">
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>REPO</span>
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+      <!-- Hero content: will be in the middle -->
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="welcome">WELCOME TO <span class="lt-text"> LENSTRENDS. </span> </h1>
+          <h2 class="subtitle mb-5">a photo site where you have the ability to categorize what you like to see behind the
+            lens.
+          </h2>
+        </div>
     
-</body>
+        <div class="container has-text-centered">
+          <h1 class="subtitle mt-4">
+            These are the categories that you have selected:
+          </h1>
+          <div class="buttons are-medium is-centered">
+            <button class="button btn1 change-category-btn " id="music-btn" value="music">
+              MUSIC</button>
+            <img id="music-pix" src="" />
+            <button class="button btn1 change-category-btn" id="books-btn" value="books"> BOOKS
+            </button>
+            <button class="button btn1 change-category-btn" id="travel-btn"
+              value="travel btn1 change-category-btn">TRAVEL</button>
+            <button class="button btn1 change-category-btn" id="sports-btn"
+              value="sports btn1 change-category-btn">SPORTS</button>
+            <button class="button btn1 change-category-btn" id="nature-btn"
+              value="nature btn1 change-category-btn">NATURE</button>
+
+              </div>
+              
+              
+
+          <!-- Columns -->
+    <div class="columns has-background-dark ">
+        <!-- Left -->
+        <div class="column is-one-third ml-7 ">
+            <h2 class="sub-header"> CATEGORIES </h2>
+            <div class="buttons are-medium is-centered">
+                <button class="button change-category-btn" id="dance-btn"
+                value="dance change-category-btn">DANCE</button>
+                <button class="button change-category-btn" id="food-btn"
+                value="food change-category-btn">FOOD</button>
+                <button class="button change-category-btn" id="animals-btn"
+                value="animals change-category-btn">ANIMALS</button>
+                <button class="button change-category-btn" id="plants-btn"
+                value="plants change-category-btn">PLANTS</button>
+                <button class="button change-category-btn" id="beach-btn"
+                value="beach change-category-btn">BEACH</button>
+
+            </div>
+            
+        </div>
+        <!-- Right -->
+        <div class="column is-four-sixths mr-7">
+            <h2 class="sub-header"> IMAGES </h2>
+            <div class="container is-fluid ">
+                <div class="notification is-primary has-background-light has-text-grey">
+                    <!-- JS code for pexels gallery goes here-->
+                    <div id="photos-container">
+                
+                    </div>
+                
+                      
+                   </div>
+                    </div>
+              </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+            <!-- Hero footer: will stick at the bottom -->
+            <div class="hero-foot">
+              <nav class="tabs is-boxed is-fullwidth">
+                <div class="container">
+                </div>
+              </nav>
+            </div>
+    </section>
+
+    <script src="assets/js/index.js"></script>
+  </body>
+
 </html>
