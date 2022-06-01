@@ -1,9 +1,9 @@
 
-
 @font-face {
     src: url("./assets/fonts/PJSM.ttf");
     font-family: PJSM;
 }
+
 
 
 .welcome {
@@ -17,8 +17,6 @@
     font-size: 85px;
     font-style: italic;
     font-weight: 700;
-   
-
 }
 
 .sub-header{
@@ -73,4 +71,8 @@
     border: none;
     color:rgb(66, 58, 96);
     font-weight: 600;
+}
+
+.lt-footer {
+    font-style: italic;
 }
