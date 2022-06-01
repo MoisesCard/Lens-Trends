@@ -10,3 +10,25 @@
   --white: --white
 }
 
+.head title {
+  font-size: 35px;
+}
+
+
+.hero-body h1 {
+  font-size: 35px;
+}
+
+.hero-body h2 {
+  font-size: 25px;
+}
+
+.hero-body button {
+  border-radius: 50%;
+}
+
+.hero-body button:hover {
+transform: scale(1.2);
+border-radius: 90%;
+}
+

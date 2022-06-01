@@ -4,7 +4,6 @@ var url = "https://api.pexels.com/v1/search";
 var category = "";
 
 function pullImages() {
- 
   // ACCESS TO URL
   var queryParams = "?query=" + category;
   var finalURL = url + queryParams;
@@ -18,20 +17,22 @@ function pullImages() {
       return response.json();
     })
     .then(function (data) {
-        console.log(data);
-        // data.photos
-        photosContainer.innerHTML = '';
-        for (let i = 0; i < data.photos.length; i++) {
-            const photo = data.photos[i]; 
-            console.log(photo);
-            var imageElement = document.createElement('img');
-            imageElement.src = photo.src.original;
-            imageElement.classList.add('photo');
-            console.log(photo.src.original);
-            photosContainer.appendChild(imageElement);
-        }
+      console.log(data);
+      // DATA.PHOTOS
+      photosContainer.innerHTML = "";
+      for (let i = 0; i < data.photos.length; i++) {
+        const photo = data.photos[i];
+        console.log(photo);
+        var imageElement = document.createElement("img");
+        imageElement.src = photo.src.small;
+        imageElement.classList.add("photo");
+        console.log(photo.src.small);
+        photosContainer.appendChild(imageElement);
+      }
     });
 }
+
+// CATEGORY BUTTONS 
 var musicCatBtn = document.querySelector("#music-btn");
 musicCatBtn.addEventListener("click", setCat);
 var booksCatBtn = document.querySelector("#books-btn");
@@ -42,9 +43,11 @@ var sportsCatBtn = document.querySelector("#sports-btn");
 sportsCatBtn = addEventListener("click", setCat);
 var natureCatBtn = document.querySelector("#nature-btn");
 natureCatBtn = addEventListener("click", setCat);
-var photosContainer = document.querySelector('#photos-container');
+var photosContainer = document.querySelector("#photos-container");
 
 function setCat(evt) {
   category = evt.target.value;
   pullImages();
 }
+
+
