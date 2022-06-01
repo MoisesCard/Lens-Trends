@@ -7,16 +7,17 @@
 
 
 .welcome {
-    font-size: 80px;
+    font-size: 60px;
     color: rgb(225, 203, 113);
     font-weight: 700;
 }
 
 .lt-text {
     color: rgb(135, 113, 225) ;
-    font-size: 85px;
+    font-size: 65px;
     font-style: italic;
     font-weight: 700;
+    
 }
 
 .sub-header{
@@ -29,7 +30,6 @@
 }
 
 .button-icon {
-    
     font-weight: 600;
 }
 
