@@ -1,49 +1,17 @@
-@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan&family=Roboto+Slab&display=swap');
-
-/* charlotte code */
-@font-face {
-    src: url("./assets/fonts/PJSM.ttf");
-    font-family: PJSM;
+* {
+    font-family: Lobster;
+}
+  
+:root {
+    --black: black;
+    --green: #02753c;
+    --purple: #630150;
+    --grey: #242625;
+    --white: --white
 }
 
-.welcome {
-    font-size: 70px;
-    color: rgb(225, 203, 113);
-    font-weight: 700;
-}
 
-.sub-header{
-    font-size: 40px; 
-    font-weight: 600;
-    color: rgb(225, 203, 113);
-    text-align: center;
-    padding-bottom: 10px;
-
-}
-
-.button {
-    background-color: rgb(135, 113, 225) ;
-    border: none;
-    color:rgb(66, 58, 96);
-    font-weight: 600;
-}
-
-.button:hover {
-    background-color: rgb(225, 203, 113) ;
-    border: none;
-    color:rgb(96, 89, 58);
-}
-
-.button:active {
-    background-color: rgb(225, 203, 113) ;
-    border: none;
-    color:rgb(96, 89, 58);
-}
-
-/* charlotte code */
-
-
+/* Code to display modal on and off  */
 .display {
     display: block;
 }
@@ -62,11 +30,7 @@
     top: 50%; 
     margin-left: -150px;
     margin-top: -150px;
- }
-/* button options and input bar */
-
-
-
+}
 
 .continue-btn {
     width: 200px;
@@ -77,4 +41,3 @@
     position: relative;
 
 }
-
