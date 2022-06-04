@@ -1,0 +1,77 @@
+@font-face {
+    src: url("./assets/fonts/PJSM.ttf");
+    font-family: PJSM;
+}
+
+
+
+.welcome {
+    font-size: 60px;
+    color: rgb(225, 203, 113);
+    font-weight: 700;
+}
+
+.lt-text {
+    color: rgb(135, 113, 225);
+    font-size: 65px;
+    font-style: italic;
+    font-weight: 700;
+
+}
+
+.sub-header {
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(225, 203, 113);
+    text-align: center;
+    padding-bottom: 10px;
+
+}
+
+.button-icon {
+    font-weight: 600;
+}
+
+.button {
+    background-color: rgb(135, 113, 225);
+    border: none;
+    color: rgb(66, 58, 96);
+    font-weight: 600;
+}
+
+.button:hover {
+    background-color: rgb(225, 203, 113);
+    border: none;
+    color: rgb(96, 89, 58);
+}
+
+.btn1 {
+    background-color: rgb(225, 203, 113);
+    border: none;
+    color: rgb(96, 89, 58);
+
+}
+
+.btn1:hover {
+    background-color: rgb(135, 113, 225);
+    border: none;
+    color: rgb(66, 58, 96);
+    font-weight: 600;
+}
+
+.button:active {
+    background-color: rgb(225, 203, 113);
+    border: none;
+    color: rgb(96, 89, 58);
+}
+
+.btn1:active {
+    background-color: rgb(135, 113, 225);
+    border: none;
+    color: rgb(66, 58, 96);
+    font-weight: 600;
+}
+
+.lt-footer {
+    font-style: italic;
+}

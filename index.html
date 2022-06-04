@@ -9,84 +9,217 @@
     <link rel="shortcut icon" type="camera/png"
       href="https://cdn1.iconfinder.com/data/icons/social-media-vol-3/24/_camera-256.png" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- MAIN PAGE CODE-->
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script src="https://kit.fontawesome.com/c1eee10096.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="assets/css/index.css" />
+
+    <!-- MAIN PAGE CODE -->
+
   </head>
 
   <body>
-    <section class="hero is-success">
-      <!-- Hero head: will stick at the top -->
-      <div class="hero-head">
-        <header class="navbar">
-          <div class="container">
-            <div class="navbar-brand">
-              <a class="navbar-item">
-                <img src="assets/camera.png" alt="Lens Trends Logo">
-                <h1 class="header-title">LENStrends</h1>
-              </a>
-              <span class="navbar-burger" data-target="navbarMenuHeroC">
-                <span></span>
-                <span></span>
-                <span></span>
-              </span>
-            </div>
-            <div id="navbarMenuHeroC" class="navbar-menu">
-              <div class="navbar-end">
-                <a class="navbar-item is-active">
-                  HOME
-                </a>
-                <a class="navbar-item">
-                  MY SAVES
-                </a>
-                </span>
-              </div>
+
+    <!-- Modal section  -->
+    <modal id="introModal" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head ">
+          <p class="modal-card-title title is-size-2">Hello Welcome to Lens Trends</p>
+        </header>
+        <section class="modal-card-body">
+          <div id="name-holder">
+            <h1 id="nameTitle" class="title is-size-4">What's your name?</h1>
+            <div id="name-bar" class="columns">
+              <input id="input-bar" class="input is-success is-medium is-rounded input-bar mr-1 column" type="text"
+                name="enter-name" placeholder="First Name" required>
+              <!-- <button id="submit-name" class="button is-success is-medium column is-one-fifth" type="submit">Submit</button> -->
             </div>
           </div>
-        </header>
-      </div>
-
-      <!-- Hero content: will be in the middle -->
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <h1 class="title">WELCOME TO LENS TRENDS.</h1>
-          <h2 class="subtitle">a photo site where you have the ability to categorize what you like to see behind the
-            lens.
+          <!-- Subtitle -->
+          <h2 class="title is-size-4 mt-2 mb-2">Please choose some categories that you are interested in...
           </h2>
-        </div>
+          <!-- Buttons -->
+          <form id="form-container" class="field is-centered">
+            <!-- <input type="checkbox" id="music" name="preference1" value="music" />
+              <label for="music">Music</label><br />
+              <input type="checkbox" id="animals" name="preference2" value="animals" />
+              <label for="animals">Animals</label><br />
+              <input type="checkbox" id="sports" name="preference3" value="sports" />
+              <label for="sports">Sports</label><br />
+              <input type="checkbox" id="movies" name="preference4" value="movies" />
+              <label for="movies">Movies</label>
+              //add more if desired  -->
+          </form>
+          <button id="continue-btn" class="button mt-5 is-success continue-btn is-flex-wrap-wrap">Continue</button>
+          <button id="not-me">this isn't me</button>
       </div>
 
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <h1 class="subtitle">
-            These are the categories that you have selected:
-          </h1>
-          <div class="buttons are-medium is-centered">
-            <button class="button is-black change-category-btn button is-large" id="music-btn" value="music">
-              MUSIC</button>
-            <img id="music-pix" src="" />
-            <button class="button is-black change-category-btn button is-large" id="books-btn" value="books"> BOOKS
-            </button>
-            <button class="button is-black change-category-btn button is-large" id="travel-btn"
-              value="travel">TRAVEL</button>
-            <button class="button is-black change-category-btn button is-large" id="sports-btn"
-              value="sports">SPORTS</button>
-            <button class="button is-black change-category-btn button is-large" id="nature-btn"
-              value="nature">NATURE</button>
+    </modal>
+    <!-- Modal section end  -->
 
-              <div id="photos-container">
-                
+    <!-- main page code -->
+
+    <main>
+      <section id="main-page">
+        <section class="hero is-info is-medium has-background-black">
+          <div class="hero-head">
+            <nav class="navbar mt-4">
+              <div class="container">
+                <div class="navbar-brand">
+
+                  <h2 class="is-size-2 is-family-primary">
+                    <i class="fa-solid fa-camera-retro"></i>
+                    LENStrends
+                  </h2>
+                  <span class="navbar-burger has" data-target="navbarMenuHeroB">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </span>
+                </div>
+                <div id="navbarMenuHeroB" class="navbar-menu">
+                  <div class="navbar-end">
+
+                    <span class="icon is-large">
+                      <a class="button-icon ml-4" href="./">
+                        <i class="fa-solid fa-house mr-4 mt-4"></i>
+
+                        <!-- profile icon
+          <i class="fa-solid fa-user mr-4 mt-4"></i>
+      -->
+                      </a>
+                    </span>
+
+
+
+                    <span class="navbar-item">
+                      <a class="button  ml-4" href="https://github.com/MoisesCard/group1-project">
+                        <span class="icon">
+                          <i class="fab fa-github"></i>
+                        </span>
+                        <span>REPO</span>
+                      </a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+
+          <!-- Hero content: will be in the middle -->
+          <div class="hero-body">
+            <div class="container has-text-centered">
+              <h1 class="welcome">WELCOME TO <span class="lt-text"> LENStrends. </span> </h1>
+              <h2 class="subtitle mb-5">a photo site where you have the ability to categorize what you
+                like to see behind the
+                lens.
+              </h2>
+            </div>
+
+            <div class="container has-text-centered">
+              <h1 class="subtitle mt-4">
+                These are the categories that you have selected:
+              </h1>
+              <!-- //add in selected categories list  -->
+              <div id="categoriesInput"></div>
+
+
+
+              <!-- Columns -->
+              <div class="columns has-background-black is-centered">
+                <!-- Left -->
+                <div class="column is-one-third ml-8">
+
+                  <h2 class="sub-header"> SEARCH </h2>
+                  <input type="text" class="search-input">
+                  <div class="button searchbtn">SEARCH</div>
+
+                  <button class="button clearOutPhotos" id="clearOutPhotos-btn">Clear Photos</button>
+
+                  <h2 class="sub-header"> CATEGORIES </h2>
+                  <div class="buttons are-medium is-centered mb-5" id="category-btns-container">
+                    <!-- <button class="button btn1 change-category-btn " id="music-btn">
+                    MUSIC</button>
+              
+                  <button class="button btn1 change-category-btn" id="books-btn"> BOOKS
+                  </button>
+                  <button class="button btn1 change-category-btn" id="travel-btn"
+                   >TRAVEL</button>
+                  <button class="button btn1 change-category-btn" id="sports-btn"
+                   >SPORTS</button>
+                  <button class="button btn1 change-category-btn" id="nature-btn"
+                    >NATURE</button>
+
+                    </div>
+                  <div class="buttons are-medium is-centered">
+                      <button class="button change-category-btn" id="dance-btn"
+                      value="dance change-category-btn">DANCE</button>
+                      <button class="button change-category-btn" id="food-btn"
+                      value="food change-category-btn">FOOD</button>
+                      <button class="button change-category-btn" id="animals-btn"
+                      value="animals change-category-btn">ANIMALS</button>
+                      <button class="button change-category-btn" id="plants-btn"
+                      value="plants change-category-btn">PLANTS</button>
+                      <button class="button change-category-btn" id="beach-btn"
+                      value="beach change-category-btn">BEACH</button>
+
+                  </div> -->
+
+                  </div>
+                  <!-- Right -->
+                  <div class="column is-four-sixths mr-7 mt-7">
+                    <div id="selected-photo-info"></div>
+                    <h2 class="sub-header"> IMAGES </h2>
+                    <div class="container is-fluid ">
+                      <div class="notification is-primary has-background-light has-text-grey">
+                        <!-- JS code for pexels gallery goes here-->
+                        <div class="gallery" id="photos-container">
+
+                        </div>
+
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
               </div>
 
+    </main>
 
-            <!-- Hero footer: will stick at the bottom -->
-            <div class="hero-foot">
-              <nav class="tabs is-boxed is-fullwidth">
-                <div class="container">
-                </div>
-              </nav>
-            </div>
+
+
+
+
+    </nav>
+    </div>
+
+    <footer class="footer has-background-black">
+      <div class="content has-text-centered">
+        <p>
+          <strong class="lt-footer">LENStrends</strong> by Marie, Moises, Courtney, Charlotte.
+        </p>
+      </div>
+    </footer>
+    </section>
     </section>
 
-    <script src="assets/js/script.js"></script>
+    <!-- LANDING -->
+
+    <script src="./assets/js/script.js"></script>
+
+    <!-- MAIN -->
+    <script src="assets/js/index.js"></script>
+
+
   </body>
 
 </html>

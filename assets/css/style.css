@@ -2,33 +2,36 @@
   font-family: Lobster;
 }
 
-:root {
-  --black: black;
-  --green: #02753c;
-  --purple: #630150;
-  --grey: #242625;
-  --white: --white
+
+
+/* Code to display modal on and off  */
+.display {
+  display: block;
 }
 
-.head title {
-  font-size: 35px;
+.noDisplay {
+  display: none;
 }
 
+.m-title {
+  font-family: 'Roboto Slab', serif;
 
-.hero-body h1 {
-  font-size: 35px;
 }
 
-.hero-body h2 {
-  font-size: 25px;
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -150px;
+  margin-top: -150px;
 }
 
-.hero-body button {
-  border-radius: 50%;
-}
+.continue-btn {
+  width: 200px;
+  background-color: #fdbf02;
+  color: #626567;
+  border-color: #626567;
+  margin-left: 400px;
+  position: relative;
 
-.hero-body button:hover {
-transform: scale(1.2);
-border-radius: 90%;
 }
-
