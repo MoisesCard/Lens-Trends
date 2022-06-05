@@ -43,13 +43,16 @@
       <!-- Subtitle -->
           <h2 class="title is-size-4 mt-2 mb-2">Please choose some categories that you are interested in...</h2>
       <!-- Buttons -->
-          <div class="field is-centered">
-              <button class="button  is-success is-medium m-2">Food</button>
-              <button class="button  is-success is-medium m-2">Music</button>
-              <button class="button  is-success is-medium m-2">Animals</button>
-              <button class="button  is-success is-medium m-2">Sports</button>
-              <button class="button  is-success is-medium m-2">Movies</button>
-          </div>
+      <form id="form-container" class="field is-centered">
+        <input type="checkbox" id="music" name="preference1" value="music" />
+          <label for="music">Music</label><br />
+          <input type="checkbox" id="animals" name="preference2" value="animals" />
+          <label for="animals">Animals</label><br />
+          <input type="checkbox" id="sports" name="preference3" value="sports" />
+          <label for="sports">Sports</label><br />
+          <input type="checkbox" id="movies" name="preference4" value="movies" />
+          <label for="movies">Movies</label>
+          </form>
           <button id="continue-btn" class="button mt-5 is-success continue-btn is-flex-wrap-wrap">Continue</button>
       </div>
     </modal>
@@ -115,6 +118,10 @@
                 <h1 class="subtitle mt-4">
                   These are the categories that you have selected:
                 </h1>
+                
+
+
+
                 <div class="buttons are-medium is-centered mb-5">
                   <button class="button btn1 change-category-btn " id="music-btn" value="music">
                     MUSIC</button>
@@ -128,9 +135,8 @@
                   <button class="button btn1 change-category-btn" id="nature-btn"
                     value="nature btn1 change-category-btn">NATURE</button>
 
-                    </div>
-                    
-                    
+                    </div> 
+                                        
 
                 <!-- Columns -->
           <div class="columns has-background-black is-centered">
@@ -197,12 +203,12 @@
           </section>
     </section>
 
-    <!-- LANDING -->
+    <!-- JS -->
 
     <script src="./assets/js/script.js"></script>
 
-    <!-- MAIN -->
-    <script src="assets/js/index.js"></script>
+    <script src="./assets/js/index.js"></script>
+
 
 
   </body>
