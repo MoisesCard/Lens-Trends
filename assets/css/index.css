@@ -158,12 +158,13 @@
     display: grid;
     row-gap: 10px;
     column-gap: 10px;
-    grid-template-columns: repeat(3, 300px);
+    grid-template-columns: repeat(2, 63%);
 }
 
 img {
     padding: 10px;
-    width: 300px;
+    flex-wrap: wrap;
+    flex-direction: column;
     cursor: pointer;
+    display: center;
 }
-

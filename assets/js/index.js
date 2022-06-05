@@ -1,7 +1,7 @@
-// PLACE HOLDER js
+// PLACE HOLDER IMAGES
 
 const auth = "563492ad6f9170000100000152ffb040725b4fec8924b778c7fa6b04";
-// search button
+const next = document.querySelector(".next");
 const searchbtn = document.querySelector(".searchbtn");
 const input = document.querySelector("input");
 
@@ -34,13 +34,55 @@ async function curatedPhotos(pagenr) {
         <a href=${photo.src.large}> Download</a>
         
         > </img> `;
-    document.querySelector("#photos-container").appendChild(pic);
+    document.querySelector("#placeholder-img").appendChild(pic);
+    console.log("placeholder");
   });
 }
 
-//
+//searched images
+async function SearchImgs(query, pagenr) {
+  const data = await fetch(
+    `https://api.pexels.com/v1/search?query=${query}&per_page=15`,
+    {
+      method: "GET",
+      headers: {
+        Accept: "application/json",
+        Authorization: auth,
+      },
+    }
+  );
 
-//  FETCH IMAGES FROM PEXEL
+  const result = await data.json();
+  result.photos.forEach((photo) => {
+    const pic = document.createElement("div");
+    pic.innerHTML = `<img src=${photo.src.large} 
+        <p>Photo : ${photo.photographer}</p>
+        <a href=${photo.src.large}> Download</a>
+        
+        > </img> `;
+    document.querySelector(".gallery").appendChild(pic);
+    console.log("placeholder");
+  });
+}
+
+searchbtn.addEventListener("click", () => {
+  if (input.value === "") return;
+  clear();
+  search = true;
+  SearchImgs(query, pagenr);
+});
+
+function clear() {
+  input.value = "";
+  document.querySelector(".gallery").innerHTML = "";
+  pagenr = 1;
+}
+
+curatedPhotos(pagenr);
+
+// END OF PLACEHOLDER IMAGES //
+
+//  FETCH IMAGES FROM PEXEL "ON CLICK" BUTTON
 var API_KEY = "563492ad6f9170000100000152ffb040725b4fec8924b778c7fa6b04";
 var url = "https://api.pexels.com/v1/search";
 var category = "";
@@ -62,6 +104,7 @@ function pullImages() {
       console.log(data);
       // DATA.PHOTOS
       photosContainer.innerHTML = "";
+
       for (let i = 0; i < data.photos.length; i++) {
         const photo = data.photos[i];
         console.log(photo);
@@ -103,5 +146,3 @@ function setCat(evt) {
   category = evt.target.value;
   pullImages();
 }
-
-curatedPhotos(pagenr);
