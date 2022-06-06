@@ -28,7 +28,7 @@ https://docs.google.com/presentation/d/1iLYm10FqVvkIcgcDiiF8iGenutwdtN9n5_-FSEEm
 <p> Then I can view the photos I saved there. </p>
 
 
-<h2> PROJECT GOALS  </h2> 
+<h2 align=center> PROJECT GOALS  </h2> 
 <p> ✅ Modal that brings user to main page </p>
 <p> ✅ Input box for users name (on modal) </p>
 <p> ✅ Check-boxes that presents the user with multiple categories to choose from </p>
