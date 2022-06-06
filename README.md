@@ -1,6 +1,6 @@
 # group1-project
 
-<h1 align=center> Lens Trends </h1>
+<h1 align=center> 📸 LENStrends </h1>
 
 <h2 align=center> Wire Frame</h2>
 https://docs.google.com/presentation/d/1iLYm10FqVvkIcgcDiiF8iGenutwdtN9n5_-FSEEmFu8/edit?usp=sharing
@@ -26,3 +26,18 @@ https://docs.google.com/presentation/d/1iLYm10FqVvkIcgcDiiF8iGenutwdtN9n5_-FSEEm
 <p> When I click on a specific category </p>
 
 <p> Then I can view the photos I saved there. </p>
+
+
+<h2> PROJECT GOALS  </h2> 
+<p> ✅ Modal that brings user to main page </p>
+<p> ✅ Input box for users name (on modal) </p>
+<p> ✅ Check-boxes that presents the user with multiple categories to choose from </p>
+<p> ✅ Local Storage </p>
+<p> ✅ Bulma CSS used to design Modal & Main Page </p>
+<p> ✅ Site is responsive </p>
+<p> ✅ Buttons that present the user with images from Pexels and Unsplash API </p>
+<p> ⬜ ✅ Search button that presents the user with other images (have to click the input-box twice to recieve images and not the button)  </p>
+<p> ⬜ Allow the user to choose multiple categories to see at once </p>
+<p> ⬜ Placeholder images go away when a category is presented </p>
+
+
