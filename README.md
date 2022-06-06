@@ -5,6 +5,9 @@
 <h2 align=center> Wire Frame</h2>
 https://docs.google.com/presentation/d/1iLYm10FqVvkIcgcDiiF8iGenutwdtN9n5_-FSEEmFu8/edit?usp=sharing
 
+<h2 align=center> Description <h2>
+  <p> Lens Trends is a site that shows users photos based on their selected interests. Photos are generated based on the user so every user trend is unique. Photos are free for every user and they can be used on any project the user desires. </p>
+
 <h2 align=center> User Story </h2>
 
 <p> As a user I want to be able to view photos based on my interest.</p>
