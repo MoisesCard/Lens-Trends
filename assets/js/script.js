@@ -209,7 +209,7 @@ function pullImages() {
     .then(function (data) {
       console.log(data);
       // DATA.PHOTOS
-      photosContainer.innerHTML = "";
+      // photosContainer.innerHTML = "";
 
       for (let i = 0; i < data.photos.length; i++) {
         const photo = data.photos[i];
@@ -218,6 +218,42 @@ function pullImages() {
         imageElement.src = photo.src.large;
         imageElement.classList.add("photo");
         console.log(photo.src.large);
+        photosContainer.appendChild(imageElement);
+      }
+    });
+}
+
+//  FETCH IMAGES FROM UNSPLASH
+var API_KEY1 = "pKvl5nE0zfPqEAvKWOou7fjwjf_5c9JnHdVvoO4abhU";
+var url1 = "https://api.unsplash.com/search/photos?page=1&query=";
+function pullUnsplashImages() {
+  // ACCESS TO URL
+  var queryParams = category;
+  var finalURL =
+    url1 +
+    queryParams +
+    "&client_id=pKvl5nE0zfPqEAvKWOou7fjwjf_5c9JnHdVvoO4abhU";
+  console.log(queryParams);
+  console.log(category);
+  console.log(finalURL);
+  fetch(finalURL, {
+    headers: {
+      Authorization: API_KEY1,
+    },
+  })
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      console.log(data);
+      // DATA.PHOTOS
+      //photosContainer.innerHTML = "";
+      for (let i = 0; i < data.results.length; i++) {
+        const photo = data.results[i].urls.regular;
+        console.log(photo);
+        var imageElement = document.createElement("img");
+        imageElement.src = photo;
+        imageElement.classList.add("photo");
         photosContainer.appendChild(imageElement);
       }
     });
@@ -250,7 +286,9 @@ var photosContainer = document.querySelector("#photos-container");
 
 function setCat(evt) {
   category = evt.target.value;
+  photosContainer.innerHTML = "";
   pullImages();
+  pullUnsplashImages();
 }
 
 continueBtnEl.addEventListener("click", showMainPage);
