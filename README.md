@@ -29,6 +29,8 @@ https://docs.google.com/presentation/d/1iLYm10FqVvkIcgcDiiF8iGenutwdtN9n5_-FSEEm
 <p> When I click on a specific category </p>
 
 <p> Then I can view the photos I saved there. </p>
+  
+  <h2 align=center> Screenshots<h2>
 
   <img width="1440" alt="Screen Shot 2022-06-05 at 10 31 34 PM" src="https://user-images.githubusercontent.com/103094173/172084824-c6eea9b6-579f-46f3-8f67-9464d7a39363.png">
   <img width="1440" alt="Screen Shot 2022-06-05 at 10 31 21 PM" src="https://user-images.githubusercontent.com/103094173/172084831-e6416ed2-5661-48ee-99c1-b52218947541.png">
